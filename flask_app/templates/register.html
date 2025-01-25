@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} create an account {% endblock %}</h1>
+    <form method= "POST">
+            <label for="name"></label>
+            <input type="text" name="name"
+                   placeholder="full name">
+            </input>
+        <br>
+            <label for="country"></label>
+            <input type="text" name="country"
+                   placeholder="country">
+            </input>
+        <br>
+            <label for="number"></label>
+            <input type="number" name="number"
+                   placeholder="phone number">
+            </input>
+        <br>
+        <label for="mail"></label>                <input type="mail" name="mail"                       placeholder="mail">
+	</input>
+	<br>
+	<label for="username"></label>                <input type="username" name="username"                       placeholder="username">                </input>
+	<br>
+	<label for="password"></label>                <input type="password" name="password"                       placeholder="password">                </input>
+	<br>
+	<input type="submit" placeholder="sumbit">
+	<a href="http://127.0.0.1:5000/login/"></a>
+    </form>
+{% endblock %}
